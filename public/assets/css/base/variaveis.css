@@ -1,0 +1,39 @@
+:root {
+  --cor-primaria: hsl(180, 96%, 18%);
+  --cor-secundaria: hsl(159, 31%, 89%);
+  --cor-destaque: hsl(161, 33%, 40%);
+  --cor-branca: hsl(210, 7%, 95%);
+  --cor-preta: hsl(0, 0%, 5%);
+
+  --fonte-corpo: "ROBOTO-FLEX";
+  --fonte-destaque: "MERRIWEATHER";
+
+  --h1-font-size: clamp(1.5rem, 3vw, 2.5rem);
+  --h2-font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  --h3-font-size: clamp(1rem, 2vw, 1.4rem);
+  --normal-font-size: clamp(.95rem, 1.5vw, 1.05rem);
+  --small-font-size: clamp(.8rem, 1.2vw, .9rem);
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --z-tooltip: 10;
+  --z-button: 222;
+  --z-overlay: 999;
+  --z-fixed: 1000;
+
+  --transition-025s: all .25s ease-in-out;
+  --border-radius: 2.5rem;
+}
+
+@font-face {
+  font-family: "MERRIWEATHER";
+  src: url("../../font/Merriweather-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ROBOTO-FLEX";
+  src: url("../../font/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf") format("truetype");
+}

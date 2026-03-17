@@ -1,0 +1,17 @@
+{
+    "name": "denise/centro",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denise Mendes",
+            "email": "denisemendesjanota@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

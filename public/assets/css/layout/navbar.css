@@ -1,0 +1,38 @@
+.navbar {
+  background-color: var(--cor-primaria);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbar-expand .navbar-collapse {
+  min-width: 200px;
+}
+
+.navbar-right {
+  gap: 2rem;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-name {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.user-role {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.nav-icon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}

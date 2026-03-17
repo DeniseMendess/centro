@@ -1,0 +1,41 @@
+body {
+  background-color: var(--cor-branca);
+  color: var(--cor-preta);
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: var(--fonte-corpo);
+  font-size: var(--normal-font-size);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  transition: var(--transition-025s);
+  background-color: var(--cor-branca);
+  margin-left: 260px;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+#sidebar:not(.expand)~.main {
+  margin-left: 90px;
+}

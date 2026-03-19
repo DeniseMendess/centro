@@ -40,7 +40,6 @@ class Rota
       $url = explode('/', $url);
 
       return $url;
-      
     }
   }
 }

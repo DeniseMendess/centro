@@ -36,13 +36,17 @@
               <p class="text-muted fs-4">Acesso ao Sistema</p>
             </div>
 
-            <form action="<?= URL ?>/login/autenticar" method="post" class="mt-lg-5">
+            <form action="<?= URL ?>/login/logar" method="post" class="mt-lg-5">
               <div class="input-group mb-4">
                 <span class="input-group-text p-3">
                   <i class="ri-at-line"></i>
                 </span>
 
-                <input type="text" name="email" class="form-control" placeholder="Seu email" autocomplete="on">
+                <input type="text" name="email" class="form-control <?= $dados['email_erro'] ? 'is-invalid' : '' ?>" value="<?= $dados['email'] ?>" placeholder="Seu email" autocomplete="on">
+
+                <div class="invalid-feedback fs-5 mt-3">
+                  <?= $dados['email_erro'] ?>
+                </div>
               </div>
 
               <div class="input-group mb-4">
@@ -50,8 +54,18 @@
                   <i class="ri-lock-line"></i>
                 </span>
 
-                <input type="password" name="senha" class="form-control" placeholder="Sua senha">
+                <input type="password" name="senha" class="form-control <?= $dados['senha_erro'] ? 'is-invalid' : '' ?>" value="<?= $dados['senha'] ?>" placeholder="Sua senha">
+
+                <div class="invalid-feedback fs-5 mt-3">
+                  <?= $dados['senha_erro'] ?>
+                </div>
               </div>
+
+              <?php if (!empty($dados['login_erro'])) { ?>
+                <h3 id="loginErro" class="text-danger mb-3">
+                  <?= $dados['login_erro'] ?>
+                </h3>
+              <?php  } ?>
 
               <div class="d-grid mb-4">
                 <button type="submit" class="btn btn-primary btn-lg shadow-sm">

@@ -2,7 +2,7 @@
 
 namespace app\Helpers;
 
-class autentizacao
+class Sessao_destroy
 {
 
 }

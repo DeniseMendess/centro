@@ -23,7 +23,7 @@ class Controller
   {
     extract($dados);
     ob_start();
-    require '../app/Views/' . $view . '.php';
+    require APP . '/Views/' . $view . '.php';
     $content = ob_get_clean();
 
     require '../app/Views/layout/main.php';

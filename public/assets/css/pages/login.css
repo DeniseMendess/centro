@@ -1,4 +1,4 @@
-@import url('../../global.css');
+@import url('../global.css');
 
 #bg-login {
   background: linear-gradient(135deg, var(--cor-primaria), var(--cor-destaque));

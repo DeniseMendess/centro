@@ -11,7 +11,7 @@
   <!-- --------------- link remix icon --------------- -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.min.css" rel="stylesheet">
   <!-- --------------- link css --------------- -->
-  <link rel="stylesheet" href="<?= URL ?>/public/assets/css/pages/login/style.css">
+  <link rel="stylesheet" href="<?= URL ?>/public/assets/css/pages/login.css">
   <title><?= APP_NOME ?></title>
 </head>
 
